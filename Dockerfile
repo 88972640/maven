@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD target/docker-images-maven.jar docker-images-maven.jar
-ENTRYPOINT ["java","-jar","/docker-images-maven.jar"]
+ADD target/maven.jar maven.jar
+ENTRYPOINT ["java","-jar","/maven.jar"]
